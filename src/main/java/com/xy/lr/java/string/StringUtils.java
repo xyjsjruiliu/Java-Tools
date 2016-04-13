@@ -9,15 +9,15 @@ import java.util.regex.Pattern;
  */
 public class StringUtils {
   public static void main(String[] args) {
-    System.out.println(match("汉子"));
+    System.out.println(ChineseMatch("10"));
   }
 
   /**
    * 汉子匹配
-   * @param str 
-   * @return 是否是汉字
+   * @param str 字符串
+   * @return 如果是汉字，则为true
    */
-  public static boolean match( String str ) {
+  public static boolean ChineseMatch( String str ) {
     String str1 = "[\\u4300-\\u9fa5]";
     Pattern pattern = Pattern.compile(str1);
 
